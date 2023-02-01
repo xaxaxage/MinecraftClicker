@@ -13,13 +13,13 @@ def f():
 
 def f2():
     while True:
-        p.click()
+        p.click(clicks=5, interval=0.03)
         if keyboard.is_pressed("r"):
             f()
 
 def f3():
     while True:
-        p.click(button="right")
+        p.click(button="right", clicks=5, interval=0.03)
         if keyboard.is_pressed("r"):
             f()
 
